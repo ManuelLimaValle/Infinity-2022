@@ -1,0 +1,205 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#todo{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,auto);
+}
+#cabecera{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/portadas/elden-ring-.jpg);
+    background-size: cover;
+}
+
+#navegador{
+    display: flex;
+    flex-flow: row wrap;
+}
+#navegador ul{
+    list-style-type:none;
+    width: 40%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 20%;
+}
+#navegador ul li a{
+     text-decoration: none;
+     color: #31B404;
+}
+
+#navegador img#logoPrincipal{
+    width:15%;
+    height:15%;
+    margin-left: 5%;
+}
+
+#navegador #buscador{
+    width:20%;
+    height:10%;
+}
+
+#navegador input#campo{
+    border-radius: 20px;
+}
+#buscador img#lupa{
+    width:10%;
+    height:10%;
+}
+
+#tituloPrincipal{
+    display: inline-block;
+    width:30%;
+    height:50%;
+    position: relative;
+    top:40%;
+    left:5%;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+#tituloPrincipal img{
+    width:100%;
+    margin-bottom: 10%;
+}
+
+#tituloPrincipal p{
+    margin: 5% 0%;
+}
+
+#tituloPrincipal a{
+    border-radius: 20px;
+    padding: 2% 2%;
+    text-decoration: none;
+    background-color: #31B404;
+    color: #ffffff;
+}
+
+/*------------------------------------*/
+section#primeraPortada{
+    height:120vh;
+    background-color:#000000;
+}
+
+section#primeraPortada #parDeJuegos{
+    position: relative;
+    top: 6rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    height:100vh;
+}
+
+#parDeJuegos div img{
+    width: 100%;
+}
+
+#parDeJuegos div{
+    width:30%
+}
+
+#parDeJuegos .textoDeJuego{
+    color:#31B404;
+    width:80%;
+    margin: 0% 15%;
+    position:relative;
+    bottom:9rem;
+
+}
+
+#parDeJuegos .textoDeJuego p{
+    margin: 6% 0%;
+}
+#parDeJuegos .textoDeJuego a{
+       border-radius: 20px;
+       background-color: #31B404;
+       padding: 3% 3%;
+       text-decoration: none;
+       color: #ffffff;
+}
+
+
+/*------------------------------------*/
+
+#segundaPortada .imagenes{
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-evenly;
+}
+
+#segundaPortada h2{
+    text-align: center;
+}
+#segundaPortada .imagenes img{
+    width:10%;
+    height:10%;
+}
+
+/*--------------------------------------------*/
+
+/*-------------------------------------*/
+ 
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,auto);
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 5%;
+}
+#acercaDeLaEmpresa{
+    width: 60%;
+    grid-row: 2/4;
+    grid-column:1/2;
+    margin-left: 20%;
+}
+
+#redesSociales{
+    grid-column:1/3;
+}
+
+#redesSociales h2{
+    text-align: center;
+}
+#redesSociales .imagenes{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#redesSociales .imagenes a img{
+   width:100%;
+}
+#redesSociales .imagenes a {
+    text-decoration: none;
+    width:5%;
+}
+
+#contactos{
+    grid-row: 2/4;
+    grid-column:2/3;
+    margin-left: 30%;
+}
+#contactos .direcciones img{
+    width: 15%;
+}
+
+.direcciones p{
+    display: inline-block;
+    margin-left: 10%;
+}
+
+footer h3{
+     grid-column: 1/3;
+}
+footer iframe{
+    grid-column: 1/3;
+    width:30%;
+}
+
